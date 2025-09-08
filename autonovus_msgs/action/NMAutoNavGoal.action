@@ -1,0 +1,14 @@
+#goal_definition
+string building_name
+geometry_msgs/PoseStamped building_loc
+int16 current_floor
+int16 target_floor
+geometry_msgs/PoseStamped target_pose
+---
+#result_definition
+uint16  error_code
+string error_msg
+bool success
+---
+#feedback_definition
+string state

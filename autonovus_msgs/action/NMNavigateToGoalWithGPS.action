@@ -1,0 +1,32 @@
+# Goal definition
+# Building location in GPS coordinates
+string building_name
+float64 building_lat
+float64 building_long
+float64 building_theta  # heading in radians
+
+int16 current_floor
+int16 target_floor
+
+# Target pose in GPS coordinates  
+float64 target_lat
+float64 target_long
+float64 target_theta  # heading in radians
+
+bool map_available
+
+# Geofence points in lat/long
+float64[] geofence_lats
+float64[] geofence_longs
+
+# Exploration points in lat/long
+float64[] exploration_lats
+float64[] exploration_longs
+---
+# Result definition
+uint16  error_code
+string error_msg
+bool success
+---
+# Feedback definition
+string state

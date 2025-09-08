@@ -1,0 +1,18 @@
+#include "autonovus_msgs/msg/MOTPredictedPath.idl"
+#include "geometry_msgs/msg/AccelWithCovariance.idl"
+#include "geometry_msgs/msg/PoseWithCovariance.idl"
+#include "geometry_msgs/msg/TwistWithCovariance.idl"
+
+module autonovus_msgs {
+  module msg {
+    struct MOTPredictedObjectKinematics {
+      geometry_msgs::msg::PoseWithCovariance initial_pose_with_covariance;
+
+      geometry_msgs::msg::TwistWithCovariance initial_twist_with_covariance;
+
+      geometry_msgs::msg::AccelWithCovariance initial_acceleration_with_covariance;
+
+      sequence<autonovus_msgs::msg::MOTPredictedPath, 100> predicted_paths;
+    };
+  };
+};

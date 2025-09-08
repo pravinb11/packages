@@ -1,0 +1,8 @@
+# Goal
+geometry_msgs/Pose2D[] goal_pose
+---
+# Result
+bool success
+---
+# Feedback
+string current_state

@@ -1,0 +1,15 @@
+#include "geometry_msgs/msg/AccelWithCovariance.idl"
+#include "geometry_msgs/msg/PoseWithCovariance.idl"
+#include "geometry_msgs/msg/TwistWithCovariance.idl"
+
+module autonovus_msgs {
+  module msg {
+    struct MOTEstimatedPointsKinematics {
+      geometry_msgs::msg::PoseWithCovariance initial_pose_with_covariance;
+
+      geometry_msgs::msg::TwistWithCovariance initial_twist_with_covariance;
+
+      geometry_msgs::msg::AccelWithCovariance initial_acceleration_with_covariance;
+    };
+  };
+};

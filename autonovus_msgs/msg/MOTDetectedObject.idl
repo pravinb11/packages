@@ -1,0 +1,16 @@
+#include "autonovus_msgs/msg/MOTDetectedObjectKinematics.idl"
+#include "autonovus_msgs/msg/MOTObjectClassification.idl"
+#include "autonovus_msgs/msg/MOTShape.idl"
+
+module autonovus_msgs {
+  module msg {
+    struct MOTDetectedObject {
+      @range (min=0.0, max=1.0)
+      float existence_probability;
+
+      sequence<autonovus_msgs::msg::MOTObjectClassification> classification;
+      autonovus_msgs::msg::MOTDetectedObjectKinematics kinematics;
+      autonovus_msgs::msg::MOTShape shape;
+    };
+  };
+};

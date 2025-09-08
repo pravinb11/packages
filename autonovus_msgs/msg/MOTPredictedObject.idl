@@ -1,0 +1,20 @@
+#include "autonovus_msgs/msg/MOTObjectClassification.idl"
+#include "autonovus_msgs/msg/MOTShape.idl"
+#include "autonovus_msgs/msg/MOTPredictedObjectKinematics.idl"
+#include "unique_identifier_msgs/msg/UUID.idl"
+
+module autonovus_msgs {
+  module msg {
+    struct MOTPredictedObject {
+      unique_identifier_msgs::msg::UUID object_id;
+
+      @range (min=0.0, max=1.0)
+      float existence_probability;
+
+      sequence<autonovus_msgs::msg::MOTObjectClassification> classification;
+      autonovus_msgs::msg::MOTPredictedObjectKinematics kinematics;
+
+      autonovus_msgs::msg::MOTShape shape;
+    };
+  };
+};

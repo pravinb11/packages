@@ -1,0 +1,53 @@
+/topo_planner_node:
+  ros__parameters:
+    # ================================================== TF
+    frame_id: odom
+    robot_base_frame_id: base_link
+    lidar_frame: laser_link
+    # ================================================== Topic
+    odometry_topic_name: odometry # Unity = odometry, SLAM = slam_odometry
+    lidar_topic_name: velodyne_points
+    traversability_topic_name: fused_grid_map_global
+    elevation_topic_name: normal_layer_grid_map
+    traversability_layer_name: fused_global
+    elevation_layer_name: elevation_jcb
+    # ================================================== Boundary
+    min_x: -50.0 # -55.0
+    min_y: -210.0 # Front = -210.0, Back = -268.0
+    min_z: 5.0
+    max_x: -25.0
+    max_y: -177.0 # Front = -177.0, Back = -200.0
+    max_z: 6.0
+    # ================================================== Robot
+    robot_height: 0.4
+    robot_bottom: 0.05
+    sensor_height: 0.5 # Sentry = 0.5, Tracked = 0.45
+    robot_footprint: 0.35 # 0.3 OK
+    # ================================================== UFOMap (Resolution = 0.1 OK, 0.2 OK): Increase to the resolution of GridMap
+    max_range: 5.0 # Coverage: 12 OK
+    insert_discrete: true
+    insert_depth: 0
+    simple_ray_casting: false
+    early_stopping: 0
+    clear_robot_enabled: false
+    frontier_depth: 0
+    pub_rate: 1.0
+    scan_voxel_size: 0.1
+    # ================================================== GridMap (global_fusion_tracked_params, core_yolo_vlp16)
+    obs_th: 0.1 # 0.3 OK / 0.7 OK
+    # ================================================== Viewpoint Manager
+    sample_dist: 0.75 # 1.0 OK / 0.5 OK
+    # frontier_dist: 15.0
+    viewpoint_gain_thre: 4.0 # 1.0 OK / 2.0 OK
+    # ================================================== Road Map
+    connectable_range: 4.0 # 3.0 OK
+    connectable_num: 4 # 3 OK
+    # ================================================== rapid Cover Planner
+    max_tour_point_num: 100
+    viewpoint_ignore_thre: 0.5 # Remove
+    local_range: 24.0 # Remove
+    frontier_gain: 100.0 # Remove
+    tourpoint_ignore_thre: 0.8
+    tourpoint_ignore_distance: 3.0
+    is_directory: true
+    alpha: 0.5 # 0.9 OK

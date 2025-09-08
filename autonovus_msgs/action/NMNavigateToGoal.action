@@ -1,0 +1,17 @@
+# Goal definition
+string building_name
+geometry_msgs/Pose2D building_location
+int16 current_floor
+int16 target_floor
+geometry_msgs/Pose2D target_pose
+bool map_available
+geometry_msgs/PolygonStamped geofence_points
+geometry_msgs/PolygonStamped exploration_points
+---
+# Result definition, bool success, string message
+uint16  error_code
+string error_msg
+bool success
+---
+# Feedback definition, geometry_msgs/PoseStamped current_pose
+string state

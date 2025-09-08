@@ -1,0 +1,7 @@
+float64 timeout                  # Maximum exploration time in seconds, use -1 for continuous detection
+autonovus_msgs/BoundingBox3D exploration_area   # Area to explore
+---
+bool success                     # Whether exploration started successfully
+string message                   # Error message if not successful
+---
+string status                   # Status of the exploration action

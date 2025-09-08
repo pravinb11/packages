@@ -1,0 +1,11 @@
+/explorer_node:
+  ros__parameters:
+    run_mode: kSim
+    frame_id: odom
+    init_motion_enable: true
+    init_x: 0.0
+    init_y: -5.0
+    init_z: 0.0
+    init_need_time: 2.0
+    goal_tolerance: 1.0 # 1.0 OK (nav2_params_sentry)
+    odometry_topic_name: odometry # Unity = odometry, SLAM = slam_odometry

@@ -1,0 +1,2 @@
+autonovus_msgs/MOTDetectedObject object
+MOTFeature feature

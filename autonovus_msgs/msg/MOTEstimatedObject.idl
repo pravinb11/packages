@@ -1,0 +1,12 @@
+#include "autonovus_msgs/msg/MOTEstimatedPointsKinematics.idl"
+#include "unique_identifier_msgs/msg/UUID.idl"
+
+module autonovus_msgs {
+  module msg {
+    struct MOTEstimatedObject {
+      unique_identifier_msgs::msg::UUID object_id;
+
+      sequence<autonovus_msgs::msg::MOTEstimatedPointsKinematics> estimated_points;
+    };
+  };
+};

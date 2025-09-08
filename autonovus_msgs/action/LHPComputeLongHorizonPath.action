@@ -1,0 +1,11 @@
+# goal definition
+nav_msgs/Path path_segment
+string path_type
+#PLANAR
+#STAIR
+#RAMP
+---
+# result definition
+nav_msgs/Path path
+---
+# feedback definition

@@ -1,0 +1,3 @@
+geometry_msgs/PoseStamped building_loc
+int16 target_floor
+geometry_msgs/PoseStamped target_pose

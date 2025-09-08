@@ -1,0 +1,6 @@
+int32 floor_number
+geometry_msgs/Pose2D goal_pose
+---
+bool success
+---
+string current_state

@@ -1,0 +1,12 @@
+# Goal definition 
+bool start_exploration 
+float32 timeout # seconds - max time to search for stairs
+---
+# Result definition 
+bool success
+string termination_reason # "timeout", "cancelled", "error"
+---
+# Feedback definition 
+float32 time_elapsed # seconds since start 
+string current_status # "searching", "analyzing", "confirming" 
+float32 area_covered # percentage of search area covered (0-100)

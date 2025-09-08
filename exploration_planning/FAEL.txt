@@ -1,0 +1,22 @@
+xhost + && docker stop autonovus_exploration ; docker start autonovus_exploration && clear ; cd ~/Projects/autonovus && ./fael_runcode
+
+xhost + && docker start autonovus_exploration && docker exec -it autonovus_exploration bash
+
+========================= autonovus =========================
+cd /home/hitech/Projects/autonovus/ && rm -rf build install log && clear && colcon build --executor sequential --symlink-install --packages-select ufomap ufomap_msgs ufomap_ros ufomap_manager control_planner_interface action_bridge_pkg intf_pkg exploration_manager planner && . install/setup.bash
+
+cd /home/hitech/Projects/autonovus && . install/setup.bash
+
+Tab 1: clear ; ros2 launch ros_tcp_endpoint sentry_endpoint.py
+Tab 2: clear ; ros2 launch pose_to_odom pose_to_odom_launch.py
+Tab 3: clear ; ros2 launch elevation_mapping_cupy elevation_mapping_cupy_vlp16.launch.py
+Tab 4: clear ; ros2 launch ans_fusion_bringup fusion.launch.xml
+Tab 5: clear ; ros2 launch pid_control_system sentry_pid.launch.py
+Tab 6: clear ; ros2 launch teb_local_planner navigation_launch_sim_sentry.launch.py
+
+Tab 7: clear ; ros2 run rviz2 rviz2 -d /home/hitech/Projects/autonovus/src/fael_ws/fael.rviz
+Tab 8: clear ; ros2 run action_bridge_pkg action_bridge_exe
+Tab 9: clear ; ros2 launch planner planner.yaml
+Tab 10: clear ; ros2 launch exploration_manager explorer.yaml
+
+Tab 11: clear ; ros2 run teleop_twist_keyboard teleop_twist_keyboard

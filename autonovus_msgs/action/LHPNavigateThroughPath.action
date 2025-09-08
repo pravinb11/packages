@@ -1,0 +1,18 @@
+# goal defenition
+nav_msgs/Path path_segment
+string path_type
+#PLANAR
+#STAIR
+#RAMP
+---
+#result definition
+uint16 error_code
+string error_msg
+string result
+---
+# feedback definition
+geometry_msgs/PoseStamped current_pose
+builtin_interfaces/Duration navigation_time
+builtin_interfaces/Duration estimated_time_remaining
+int16 number_of_recoveries
+float32 distance_remaining

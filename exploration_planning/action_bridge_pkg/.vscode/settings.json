@@ -1,0 +1,37 @@
+{
+    "ros.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/hitech/ros2_ws/build/ros_tcp_endpoint",
+        "/home/hitech/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/build/pose_to_odom",
+        "/home/hitech/ros2_ws/install/pose_to_odom/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/install/plane_segmentation/local/lib/python3.10/dist-packages",
+        "/home/hitech/ros2_ws/build/object_detection_python",
+        "/home/hitech/ros2_ws/install/object_detection_python/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/build/image_converter",
+        "/home/hitech/ros2_ws/install/image_converter/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/install/cmd_keyboard/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/install/champ_bringup/local/lib/python3.10/dist-packages",
+        "/home/hitech/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages",
+        "/home/hitech/ros2_ws/install/autonomy_stack_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/hitech/ros2_ws/build/ros_tcp_endpoint",
+        "/home/hitech/ros2_ws/install/ros_tcp_endpoint/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/build/pose_to_odom",
+        "/home/hitech/ros2_ws/install/pose_to_odom/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/install/plane_segmentation/local/lib/python3.10/dist-packages",
+        "/home/hitech/ros2_ws/build/object_detection_python",
+        "/home/hitech/ros2_ws/install/object_detection_python/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/build/image_converter",
+        "/home/hitech/ros2_ws/install/image_converter/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/install/cmd_keyboard/lib/python3.10/site-packages",
+        "/home/hitech/ros2_ws/install/champ_bringup/local/lib/python3.10/dist-packages",
+        "/home/hitech/ros2_ws/install/champ_msgs/local/lib/python3.10/dist-packages",
+        "/home/hitech/ros2_ws/install/autonomy_stack_msgs/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

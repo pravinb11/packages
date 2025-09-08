@@ -1,0 +1,19 @@
+# Goal
+string transition_id    # Optional identifier
+string context_info     # Optional context information
+---
+# Result
+bool success
+int32 floors_climbed
+float64 total_distance  # meters
+float64 total_duration  # seconds
+string termination_reason
+---
+# Feedback
+string current_state
+float64 current_pitch   # degrees
+float64 current_roll    # degrees
+float64 distance_traveled
+int32 landings_crossed
+float64 progress_percentage
+float64 time_elapsed

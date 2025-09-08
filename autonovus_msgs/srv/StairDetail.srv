@@ -1,0 +1,11 @@
+float32 search_time
+---
+float32 stair_length
+float32 stair_width # 
+float32 stair_height #
+float32[] start_pose #x,y,z,theta
+float32[] plane_eq #a, b, c, d
+float32[] direction # x,y,z stair direction vector
+geometry_msgs/Polygon boundary #boundary of quad
+float32 slope
+string state

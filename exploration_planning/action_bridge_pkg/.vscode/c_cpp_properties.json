@@ -1,0 +1,25 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hitech/ros2_ws/install/plane_segmentation/include/**",
+        "/home/hitech/ros2_ws/install/champ_msgs/include/**",
+        "/home/hitech/ros2_ws/install/champ/include/**",
+        "/home/hitech/ros2_ws/install/autonomy_stack_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/hitech/Projects/autonovus/src/dsv_planner/action_bridge_pkg/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

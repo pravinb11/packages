@@ -1,0 +1,8 @@
+launch:
+- node:
+    pkg: "exploration_manager"
+    exec: "explorer_node"
+    name: "explorer_node"
+    output: "screen"    
+    param:
+    - from: $(find-pkg-share exploration_manager)/params/parameters.yaml

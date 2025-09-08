@@ -1,0 +1,5 @@
+string context_name              # "building_search", "find_stairs", etc.
+float64 timeout                  # Maximum monitoring time in seconds, use -1 for continuous detection
+---
+bool success                     # Whether monitoring started successfully
+string message                   # Error message if not successful

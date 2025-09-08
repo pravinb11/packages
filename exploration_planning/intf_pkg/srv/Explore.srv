@@ -1,0 +1,3 @@
+int64 iter_id		# Iteration ID
+---
+geometry_msgs/Pose[] path

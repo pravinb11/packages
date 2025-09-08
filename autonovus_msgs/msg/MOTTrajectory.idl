@@ -1,0 +1,17 @@
+#include "autonovus_msgs/msg/MOTTrajectoryPoint.idl"
+#include "std_msgs/msg/Header.idl"
+
+module autonovus_msgs {
+  module msg {
+    module Trajectory_Constants {
+      const uint32 CAPACITY = 10000;
+    };
+    @verbatim (language="comment", text=
+      " A set of trajectory points for the controller")
+    struct MOTTrajectory {
+      std_msgs::msg::Header header;
+
+      sequence<autonovus_msgs::msg::MOTTrajectoryPoint, 10000> points;
+    };
+  };
+};

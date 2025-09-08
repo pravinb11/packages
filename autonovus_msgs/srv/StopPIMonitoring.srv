@@ -1,0 +1,4 @@
+string reason                    # Why stopping (e.g., "mission_cancelled"), It could be left empty aswell
+---
+bool success                     # Whether stop was successful
+bool was_active                  # Whether monitoring was actually active

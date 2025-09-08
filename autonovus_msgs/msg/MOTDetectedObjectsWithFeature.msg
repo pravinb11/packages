@@ -1,0 +1,2 @@
+std_msgs/Header header
+MOTDetectedObjectWithFeature[] feature_objects
